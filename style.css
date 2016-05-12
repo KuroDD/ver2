@@ -1,0 +1,220 @@
+body {
+	background-color: #f2f2f2;
+}
+
+ul {
+	list-style-type: none;
+}
+
+*{
+	font-size: 18px;
+}
+
+.container{
+	background-color: #ffffff;
+	width: 1200px;
+}
+
+.header{
+	padding: 5px;
+}
+
+#menu-bar{
+	background-color: white;
+	border-left: none;
+	border-right: none;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+
+#search-btn, #search-btn:hover #search-btn:active{
+	border: none;
+	background-color: white;
+	z-index: -1;
+}
+
+#search-content{
+	border: none;
+    background-color: white;
+	box-shadow: none;
+	margin-left: -15px;
+}
+
+#menu-left	li a{
+	color: black;
+	padding-bottom: 12px;
+}
+
+#menu-left	li a:hover, #menu-left	li a:active{
+	color: black;
+	border-bottom: 3px solid orange;
+}
+
+#menu-right li a{
+	color: black;
+
+}
+
+.fa-user {
+	color: orange;
+}
+
+#post{
+	color: white !important;
+	background-color: orange;
+	padding: 3px;
+	margin-top: 12px;
+}
+
+#post:hover {
+	color: white;
+	background-color: orange;
+}
+
+.side-bar{
+	list-style-type: none;
+	border: 2px solid #f2f2f2;
+	padding: 0px;
+}
+
+.side-bar li {
+	padding: 6px 6px 6px 10px;
+}
+
+.side-bar li:first-child {
+	font-size: 30px;
+	background-color: #f2f2f2;
+	position: relative;
+}
+
+.side-bar li:first-child .border {
+	border: 2px solid orange;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+}
+
+.right-bar{
+	border: 1px solid #f2f2f2;
+	padding: 0px;
+}
+
+.right-bar li{
+	padding: 15px 15px 0px 15px;
+}
+
+.right-bar li:first-child {
+	font-size: 20px;
+	background-color: #f2f2f2;
+	line-height: 20px;
+	position: relative;
+	font-weight: 400;
+	padding: 15px;
+}
+
+.right-bar li:first-child .border {
+	border: 2px solid orange;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+}
+
+.right-bar li:last-child {
+	font-size: 18px;
+	background-color: #f2f2f2;
+	line-height: 20px;
+	position: relative;
+	padding: 15px;
+	text-align: center;
+}
+
+#categories{
+	border: none;
+	background-color: white;
+	margin-left: 10px;
+	box-sizing: border-box;
+}
+
+#categories li{
+	box-sizing: border-box;
+	margin-bottom: 18px;
+}
+
+#categories a{
+	color: black;
+	padding: 5px 13px 0px 13px;
+	border: none;
+	box-sizing: border-box;
+}
+
+#categories .active{
+	background-color: white !important;
+	color: black;
+	border: none;
+	border-bottom: 3px solid orange;
+}
+
+#categories a:hover{
+	background-color: white;
+}
+
+#filter {
+
+}
+
+.post-content{
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #c9c9c9;
+	margin-right: 5px;
+}
+
+.article.top{
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+
+.article-vote{
+	font-size: 1.1em;
+}
+.bottom_a{
+	margin-top: 10px;
+	/*border-bottom: 1px #3c3c3c solid;*/
+}
+.article-border{
+	width: 90%;
+	border-bottom: 1px solid #cccccc;
+	margin-left: 5%;
+}
+.article-btn-sc{
+	font-size: 1.1em;
+	margin-left: 10px;
+}
+.expire-time {
+	position: relative;
+	left: 10px;
+	background: url("images/bg-expiretime.png") no-repeat right center;
+	text-align: right;
+	padding: 10px 10px 15px 0;
+	color: #fff;
+	font-weight: bold;
+	top: 50px;
+}
+.pdt-50 {
+	padding-top: 50px;
+}
+.header-menu-xs li{
+	/*clear: both;*/
+}
+.navbar-ybox .navbar-ybox:focus, .navbar-ybox .navbar-ybox:hover{
+	float: left;
+	background-color: #ddd;
+}
+.navbar-fixed-top {
+	top: 120px; /* you'll have to figure out the exact number here */
+}
+.jumbotron {
+	margin-top: -20px;
+}

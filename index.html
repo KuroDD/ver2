@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Title Page</title>
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="header">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-5">
+						<img src="images/logo.png" alt="logo"><br>
+						<p style="font-size: 16px;">Kenh thong tin chat luong cao cua sinh viet &amp; gioi tre Viet Nam</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<img class="img-responsive" src="images/advertise.png" alt="">
+					</div>
+				</div>
+			</div>
+			<nav id="menu-bar" class="navbar navbar-default col-md-12 col-xs-12 col-sm-12" role="navigation">
+				<div class="container-fluid">	
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav col-md-7 col-xs-5" id="menu-left">
+							<li ><a href="#"><i class="fa fa-home"></i> Trang Chu</a></li>
+							<li><a href="#"><i class="fa fa-facebook-square"></i> Like YBOX</a></li>
+							<li>
+								<form class="navbar-form navbar-left" role="search">
+									<button type="submit" class="btn btn-default" id="search-btn"><i class="fa fa-search"></i></button>
+									<div class="form-group" >
+										<input type="text" id="search-content" class="form-control" placeholder="Tim Kiem ... ">
+									</div>
+								</form>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right" id="menu-right">
+							<li><a href="#"><i class="fa fa-user"></i> Dang Ky</a></li>
+							<li><a href=""><i class="fa fa-bell"></i><span class="badge" style="background-color: red;">1</span></a></li>
+							<li><a href="" class="btn btn-warning btn-lg post" id="post"><i class="fa fa-pencil"></i> Viet Bai</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+			<div class="row">
+				<div class="hidden-xs hidden-sm col-md-3 col-lg-3" id="side-bar">
+					
+					<ul class="side-bar">
+						<li>
+							<div class="border"> </div>
+							Chu de
+						</li>
+						<li>Tin tuc</li>
+						<li>Tuyen dung</li>
+						<li>Hoc bong</li>
+						<li>Su kien</li>
+						<li>Cuoc thi</li>
+						<li>Ky nang</li>
+						<li>Guong mat</li>
+						<li>Gia vi</li>
+						<li>Lien he YBOX</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<!--<nav class="navbar navbar-default" role="navigation" id="categories">-->
+						<!--<div class="collapse navbar-collapse navbar-ex1-collapse">-->
+							<!--<ul class="nav navbar-nav categories">-->
+								<!--<li><a href="#" ><i class="fa fa-rocket"></i> Chon loc</a></li>-->
+								<!--<li><a href="#"><i class="fa fa-fire"></i> Moi nhat</a></li>-->
+								<!--<li><a href="#"><i class="fa fa-trophy"></i> Top</a></li>-->
+							<!--</ul>-->
+						<!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+					<!--</nav>-->
+					<ul class="nav nav-tabs" id="categories">
+						<li role="presentation"><a data-toggle="tab" href="#rec"><i class="fa fa-rocket"></i> Recommend</a></li>
+						<li role="presentation"><a data-toggle="tab" href="#new"><i class="fa fa-fire"></i> New</a></li>
+						<li role="presentation" class="active"><a data-toggle="tab" href="#top"><i class="fa fa-trophy"></i> Top</a></li>
+					</ul>
+					<div class="row" id="filter">
+						<select name="filter">
+							<option value="1">Top 24</option>
+						</select>
+					</div>
+					<div class="tab-content">
+						<div id="rec" class="tab-pane fade ">
+							<h3>Section A</h3>
+							<p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+						</div>
+						<div id="new" class="tab-pane fade">
+							<h3>Section B</h3>
+							<p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+						</div>
+						<div class="tab-pane article-top active" id="top">
+							<ul>
+								<li>
+									<div class="expire-time hidden-xs">
+										12/05/2016
+									</div>
+									<div class="article top">
+										<div style="background: #ff0000; padding: 5px 0;" class="visible-xs">12/05/2016</div>
+										<div class="col-md-4">
+											<img src="images/i1.png" class="img-thumbnail col-md-12">
+										</div>
+										<div class="col-md-8">
+											<div class="pdt-50 hidden-xs"></div>
+											<b>Zalora tuyển dụng nhân viên bán thời gian online Marketing 2016</b>
+											<div class="hidden-xs">
+												<div class="clearfix">
+													<span class="text-muted">#Tuyển Dụng</span>
+												</div>
+												<div class="clearfix">
+													<span class="text-muted">  3 phút trước, bởi <i class="fa fa-globe" aria-hidden="true"></i></span> Cỏ Ba Lá
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="bottom_a">
+											<div class="col-md-8 hidden-xs">
+                                        <span class="article-vote">
+                                            <i class="fa fa-eye text-warning" aria-hidden="true"></i> 1,2983 lượt xem
+                                        </span>
+											</div>
+											<div class="visible-xs col-xs-3"> <i class="fa fa-heart visible-xs" aria-hidden="true" style="color:red"></i>  </div>
+											<div class="visible-xs col-xs-3"> <i class="fa fa-commenting-o visible-xs" aria-hidden="true"> 100K</i></div>
+											<div class="col-md-4 text-right col-xs-6">
+												<span class="article-vote"> <i class="fa fa-arrow-circle-up text-success" aria-hidden="true"></i> 19999 </span>
+												<span class="article-vote"> <i class="fa fa-arrow-circle-down" style="color:red;" aria-hidden="true"></i> 1999</span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="article-border"></div>
+										<br/>
+										<div class="col-md-12 hidden-xs">
+											<div class="col-md-1"></div>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-commenting-o" aria-hidden="true"></i> (100K) Bình luận</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"><i class="fa fa-facebook-square" aria-hidden="true" style="color: #337ab7"></i> (100K) Chia sẻ</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-heart" aria-hidden="true" style="color: red"></i> Bình luận</button>
+											<div class="col-md-4"></div>
+											<div class="col-md-4"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="expire-time hidden-xs">
+										12/05/2016
+									</div>
+									<div class="article top">
+										<div style="background: #ff0000; padding: 5px 0;" class="visible-xs">12/05/2016</div>
+										<div class="col-md-4">
+											<img src="images/i1.png" class="img-thumbnail col-md-12">
+										</div>
+										<div class="col-md-8">
+											<div class="pdt-50 hidden-xs"></div>
+											<b>Zalora tuyển dụng nhân viên bán thời gian online Marketing 2016</b>
+											<div class="hidden-xs">
+												<div class="clearfix">
+													<span class="text-muted">#Tuyển Dụng</span>
+												</div>
+												<div class="clearfix">
+													<span class="text-muted">  3 phút trước, bởi <i class="fa fa-globe" aria-hidden="true"></i></span> Cỏ Ba Lá
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="bottom_a">
+											<div class="col-md-8 hidden-xs">
+                                        <span class="article-vote">
+                                            <i class="fa fa-eye text-warning" aria-hidden="true"></i> 1,2983 lượt xem
+                                        </span>
+											</div>
+											<div class="visible-xs col-xs-2"> <i class="fa fa-heart visible-xs" aria-hidden="true" style="color:red"></i>  </div>
+											<div class="visible-xs col-xs-4"> <i class="fa fa-commenting-o visible-xs" aria-hidden="true"> 100K</i></div>
+											<div class="col-md-4 text-right col-xs-6">
+												<span class="article-vote"> <i class="fa fa-arrow-circle-up text-success" aria-hidden="true"></i> 19999 </span>
+												<span class="article-vote"> <i class="fa fa-arrow-circle-down" style="color:red;" aria-hidden="true"></i> 1999</span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="article-border"></div>
+										<br/>
+										<div class="col-md-12 hidden-xs">
+											<div class="col-md-1"></div>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-commenting-o" aria-hidden="true"></i> (100K) Bình luận</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"><i class="fa fa-facebook-square" aria-hidden="true" style="color: #337ab7"></i> (100K) Chia sẻ</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-heart" aria-hidden="true" style="color: red"></i> Bình luận</button>
+											<div class="col-md-4"></div>
+											<div class="col-md-4"></div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="expire-time hidden-xs">
+										12/05/2016
+									</div>
+									<div class="article top">
+										<div style="background: #ff0000; padding: 5px 0;" class="visible-xs">12/05/2016</div>
+										<div class="col-md-4">
+											<img src="images/i1.png" class="img-thumbnail col-md-12">
+										</div>
+										<div class="col-md-8">
+											<div class="pdt-50 hidden-xs"></div>
+											<b>Zalora tuyển dụng nhân viên bán thời gian online Marketing 2016</b>
+											<div class="hidden-xs">
+												<div class="clearfix">
+													<span class="text-muted">#Tuyển Dụng</span>
+												</div>
+												<div class="clearfix">
+													<span class="text-muted">  3 phút trước, bởi <i class="fa fa-globe" aria-hidden="true"></i></span> Cỏ Ba Lá
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="bottom_a">
+											<div class="col-md-8 hidden-xs">
+                                        <span class="article-vote">
+                                            <i class="fa fa-eye text-warning" aria-hidden="true"></i> 1,2983 lượt xem
+                                        </span>
+											</div>
+											<div class="visible-xs col-xs-2"> <i class="fa fa-heart visible-xs" aria-hidden="true" style="color:red"></i>  </div>
+											<div class="visible-xs col-xs-4"> <i class="fa fa-commenting-o visible-xs" aria-hidden="true"> 100K</i></div>
+											<div class="col-md-4 text-right col-xs-6">
+												<span class="article-vote"> <i class="fa fa-arrow-circle-up text-success" aria-hidden="true"></i> 19999 </span>
+												<span class="article-vote"> <i class="fa fa-arrow-circle-down" style="color:red;" aria-hidden="true"></i> 1999</span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="article-border"></div>
+										<br/>
+										<div class="col-md-12 hidden-xs">
+											<div class="col-md-1"></div>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-commenting-o" aria-hidden="true"></i> (100K) Bình luận</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"><i class="fa fa-facebook-square" aria-hidden="true" style="color: #337ab7"></i> (100K) Chia sẻ</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-heart" aria-hidden="true" style="color: red"></i> Bình luận</button>
+											<div class="col-md-4"></div>
+											<div class="col-md-4"></div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="expire-time hidden-xs">
+										12/05/2016
+									</div>
+									<div class="article top">
+										<div style="background: #ff0000; padding: 5px 0;" class="visible-xs">12/05/2016</div>
+										<div class="col-md-4">
+											<img src="images/i1.png" class="img-thumbnail col-md-12">
+										</div>
+										<div class="col-md-8">
+											<div class="pdt-50 hidden-xs"></div>
+											<b>Zalora tuyển dụng nhân viên bán thời gian online Marketing 2016</b>
+											<div class="hidden-xs">
+												<div class="clearfix">
+													<span class="text-muted">#Tuyển Dụng</span>
+												</div>
+												<div class="clearfix">
+													<span class="text-muted">  3 phút trước, bởi <i class="fa fa-globe" aria-hidden="true"></i></span> Cỏ Ba Lá
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="bottom_a">
+											<div class="col-md-8 hidden-xs">
+                                        <span class="article-vote">
+                                            <i class="fa fa-eye text-warning" aria-hidden="true"></i> 1,2983 lượt xem
+                                        </span>
+											</div>
+											<div class="visible-xs col-xs-2"> <i class="fa fa-heart visible-xs" aria-hidden="true" style="color:red"></i>  </div>
+											<div class="visible-xs col-xs-4"> <i class="fa fa-commenting-o visible-xs" aria-hidden="true"> 100K</i></div>
+											<div class="col-md-4 text-right col-xs-6">
+												<span class="article-vote"> <i class="fa fa-arrow-circle-up text-success" aria-hidden="true"></i> 19999 </span>
+												<span class="article-vote"> <i class="fa fa-arrow-circle-down" style="color:red;" aria-hidden="true"></i> 1999</span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="article-border"></div>
+										<br/>
+										<div class="col-md-12 hidden-xs">
+											<div class="col-md-1"></div>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-commenting-o" aria-hidden="true"></i> (100K) Bình luận</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"><i class="fa fa-facebook-square" aria-hidden="true" style="color: #337ab7"></i> (100K) Chia sẻ</button>
+											<button class="btn btn-default col-md-3  article-btn-sc"> <i class="fa fa-heart" aria-hidden="true" style="color: red"></i> Bình luận</button>
+											<div class="col-md-4"></div>
+											<div class="col-md-4"></div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+					<ul class="right-bar">
+						<li>
+							<div class="border"> </div>
+							Co the ban quan tam
+						</li>
+						<li><img src="images/artical1.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical2.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical1.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical2.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical1.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical2.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical1.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li><img src="images/artical2.png" alt="">
+							<p>[HCM] Crowe Horward VietNam Tuyen dung thuc tap sinh Giang</p>
+						</li>
+						<li>Xem them ></li>
+					</ul>
+				</div>	
+			</div>
+
+		</div>
+		
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script src="Hello World"></script>
+	</body>
+</html>
